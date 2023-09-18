@@ -18,7 +18,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 's10210254', // Usually your GitHub org/user name.
+  organizationName: 's1f10210254', // Usually your GitHub org/user name.
   projectName: 'wisra-homepage', // Usually your repo name.
 
   onBrokenLinks: 'throw',
