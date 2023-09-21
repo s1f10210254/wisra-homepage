@@ -21,3 +21,85 @@
   align-items: center;
   justify-content: center;
 }
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
+.app {
+  height: 100vh; /* この部分は適宜調整してください */
+}
+
+/* .headerBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  display: none; // 初めは非表示
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: rgb(0 0 0 / 80%);
+} */
+
+/* .headerBar a {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.headerBar img.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}  */
+
+/* サイドバーの基本スタイル */
+.sidebar {
+  width: 15vw;
+  min-height: 100vh; /* 画面の高さを全て使う */
+  padding: 1rem;
+  padding: 20px;
+
+  /* overflow-y: auto; */
+  background-color: #2b1e1e; /* グレイッシュな背景色 */
+  border-right: 1px solid #ddd; /* 右側の境界線 */
+  box-shadow: 2px 0 5px rgb(37 34 50 / 10%); /* 右側に微妙な影をつける */
+}
+
+.sidebarSubHeader {
+  margin: 15px 0;
+  font-size: 24px;
+}
+
+/* サイドバーの項目スタイル */
+.sidebarItem {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  color: #e3c6c6; /* テキストの色 */
+  cursor: pointer;
+  border-radius: 5px; /* 角の丸み */
+  transition: background-color 0.3s; /* 背景色の変更をスムーズにする */
+}
+
+/* ホバーエフェクト */
+.sidebarItem:hover {
+  background-color: #e5e5e5;
+}
+
+/* アクティブな項目のスタイル */
+.sidebarItem.active {
+  font-weight: bold; /* テキストを太くする */
+  background-color: #d4e1ff; /* アクティブな項目の背景色 */
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: #f1ecec;
+}
+
+
+
