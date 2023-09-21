@@ -104,10 +104,11 @@ const Home = () => {
             ))}
           </aside> */}
           <main className={styles.main}>
-            <div>
+            {/* <div>
               <h1>{selectedItem.description}</h1>
               {renderContentBasedOnItemName(selectedItem.name)}
-            </div>
+            </div> */}
+            <IndexComponent />
           </main>
         </div>
         </main>
@@ -117,17 +118,17 @@ const Home = () => {
   );
 };
 
-function renderContentBasedOnItemName(name: string) {
-  switch (name) {
-    case 'INDEX':
-      return <IndexComponent />;
-    case 'USE WISRA':
-      return <UseWisraComponent />;
-    case '-LED':
-      return <LEDComponent />;
-    case '-SERVO':
-      return <SERVOComponent />;
-  }
-}
+// function renderContentBasedOnItemName(name: string) {
+//   switch (name) {
+//     case 'INDEX':
+//       return <IndexComponent />;
+//     case 'USE WISRA':
+//       return <UseWisraComponent />;
+//     case '-LED':
+//       return <LEDComponent />;
+//     case '-SERVO':
+//       return <SERVOComponent />;
+//   }
+// }
 
 export default Home;
