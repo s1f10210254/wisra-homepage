@@ -29,57 +29,57 @@ const Home = () => {
   //     </div>
   //   );
   // }
-  interface ItemData {
-    name: string;
+  // interface ItemData {
+  //   name: string;
 
-    description: string;
-  }
+  //   description: string;
+  // }
 
-  const itemData: ItemData[] = [
-    {
-      name: 'INDEX',
+  // const itemData: ItemData[] = [
+  //   {
+  //     name: 'INDEX',
 
-      description: 'INDEX',
-    },
-    {
-      name: 'USE WISRA',
+  //     description: 'INDEX',
+  //   },
+  //   {
+  //     name: 'USE WISRA',
 
-      description: 'USE WISRA',
-    },
-    {
-      name: '-LED',
+  //     description: 'USE WISRA',
+  //   },
+  //   {
+  //     name: '-LED',
 
-      description: 'LED',
-    },
-    {
-      name: '-SERVO',
+  //     description: 'LED',
+  //   },
+  //   {
+  //     name: '-SERVO',
 
-      description: 'SERVO',
-    },
-  ];
+  //     description: 'SERVO',
+  //   },
+  // ];
 
-  const [selectedItem, setSelectedItem] = useState<ItemData>(itemData[0]);
+  // const [selectedItem, setSelectedItem] = useState<ItemData>(itemData[0]);
 
   // const [showHeader, setShowHeader] = useState(false);
 
-  function HomepageHeader() {
-    const {siteConfig} = useDocusaurusContext();
-    return (
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className="button button--secondary button--lg"
-              to="/docs/intro">
-              Docusaurus Tutorial - 5min ⏱️
-            </Link>
-          </div>
-        </div>
-      </header>
-    );
-  }
+  // function HomepageHeader() {
+  //   const {siteConfig} = useDocusaurusContext();
+  //   return (
+  //     <header className={clsx('hero hero--primary', styles.heroBanner)}>
+  //       <div className="container">
+  //         <h1 className="hero__title">{siteConfig.title}</h1>
+  //         <p className="hero__subtitle">{siteConfig.tagline}</p>
+  //         <div className={styles.buttons}>
+  //           <Link
+  //             className="button button--secondary button--lg"
+  //             to="/docs/intro">
+  //             Docusaurus Tutorial - 5min ⏱️
+  //           </Link>
+  //         </div>
+  //       </div>
+  //     </header>
+  //   );
+  // }
 
   return (
     <div>
