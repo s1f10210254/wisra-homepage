@@ -72,7 +72,7 @@ const config = {
 
         items:[
           {
-            to:"/wisra-homepage",
+            to:"INDEX",
             label:"INDEX",
             position:"left",
           },

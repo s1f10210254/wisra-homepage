@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './index.module.css';
+import Layout from '@theme/Layout';
 
-const IndexComponent = () => {
+const Index = () => {
   return (
-    <div className={styles.container}>
+    <Layout title='INDEX'>
+        <div className={styles.container}>
       <h1 className={styles.title}>Wisra モジュールの紹介</h1>
       <p className={styles.description}>
         Wisraは、Arduinoでの開発を容易にするnpmモジュールです。このページでは、Wisraの基本的な紹介とその使用方法について説明します。
@@ -41,7 +43,9 @@ const IndexComponent = () => {
         </code>
       </section>
     </div>
+    </Layout>
+    
   );
 };
 
-export default IndexComponent;
+export default Index;

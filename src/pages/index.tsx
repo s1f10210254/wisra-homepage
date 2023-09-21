@@ -9,6 +9,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '../components/HomepageFeatures';
 import IndexComponent from '../components/Index/IndexComponent';
 
+
 const Home = () => {
   // function HeaderBar() {
   //   return (
