@@ -139,12 +139,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/s1f10210254/wisra-homepage',
+                href: 'https://github.com/s1f10210254/wisra',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} WISRA`,
       },
       prism: {
         theme: lightCodeTheme,
