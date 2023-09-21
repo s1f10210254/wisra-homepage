@@ -5,7 +5,7 @@ import Layout from '@theme/Layout';
 const LEDComponent: React.FC = () => {
   return (
     <Layout title='LED'>
-        <div className={styles.Container}>
+    <div className={styles.Container}>
       <h2 className={styles.ledTitle}>LEDを制御する</h2>
 
       {/* <div className={styles.gazou} /> */}

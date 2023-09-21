@@ -3,11 +3,11 @@ import React from 'react';
 
 const SERVOComponent: React.FC = () => {
   return (
-    <Layout title='ContenueServo'>
+    <Layout title='SERVO'>
         <div>
-        {/* SERVOに関する詳細なコンテンツをここに追加します */}
-        <p>開発中</p>
-        </div>
+      {/* SERVOに関する詳細なコンテンツをここに追加します */}
+      <p>開発中</p>
+    </div>
     </Layout>
     
   );

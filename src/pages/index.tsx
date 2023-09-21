@@ -1,8 +1,5 @@
 import { useState } from 'react';
-import IndexComponent from '../components/Index/IndexComponent';
-import LEDComponent from '../components/LED/LEDComponent';
-import SERVOComponent from '../components/SERVO/ServoComponent';
-import UseWisraComponent from '../components/UseWisra/UseWisraComponent';
+
 import styles from './index.module.css';
 import React from 'react';
 import clsx from 'clsx';
@@ -10,6 +7,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '../components/HomepageFeatures';
+import IndexComponent from '../components/Index/IndexComponent';
 
 const Home = () => {
   // function HeaderBar() {

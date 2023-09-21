@@ -5,9 +5,9 @@ const SERVOComponent: React.FC = () => {
   return (
     <Layout title='SERVO'>
         <div>
-        {/* SERVOに関する詳細なコンテンツをここに追加します */}
-        <p>開発中</p>
-        </div>
+      {/* SERVOに関する詳細なコンテンツをここに追加します */}
+      <p>開発中</p>
+    </div>
     </Layout>
     
   );
