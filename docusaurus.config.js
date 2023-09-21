@@ -72,7 +72,7 @@ const config = {
 
         items:[
           {
-            to:"INDEX",
+            to:"/INDEX",
             label:"INDEX",
             position:"left",
           },
@@ -82,15 +82,15 @@ const config = {
             position:"left",
             items:[
               {
-                to: "API/LED",
+                to: "/API/LED",
                 label:"LED",
               },
               {
-                to:"API/SERVO",
+                to:"/API/SERVO",
                 label:"SERVO",
               },
               {
-                to:"API/ContenueServo",
+                to:"/API/ContenueServo",
                 label:"ContenueServo"
               }
             ]
