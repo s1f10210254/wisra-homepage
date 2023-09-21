@@ -134,7 +134,7 @@ const config = {
               //   to: '/blog',
               // },
               {
-                label: 'nmp',
+                label: 'npm',
                 href:'https://www.npmjs.com/package/wisra'
               },
               {
