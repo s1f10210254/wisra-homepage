@@ -5,42 +5,31 @@ import styles from './index.module.css';
 
 const SERVOComponent: React.FC = () => {
   return (
-    <Layout title='ContenueServo'>
-    <div className={styles.Container}>
-      <h2 className={styles.ledTitle}>ContenueServo を制御する</h2>
+    <Layout title='Continuous Servo'>
+      <div className={styles.Container}>
+        <h2 className={styles.servoTitle}>連続回転サーボモーターを制御する</h2>
 
-      {/* <div className={styles.gazou} /> */}
-      <h3 className={styles.ledSubtitle}>LED を制御するためのインスタンスの作成</h3>
-      <pre className={styles.codeBlock}>
-        <code>const led = LED(13); // ピン13を制御するインスタンスの作成</code>
-      </pre>
+        <h3 className={styles.servoSubtitle}>連続回転サーボモーター インスタンスの作成と初期化</h3>
+        <pre className={styles.codeBlock}>
+          <code>
+            const port = await setup();
+            <br />
+            const rotateServo = port.Rotateservo(9, 55, 4);
+          </code>
+        </pre>
 
-      <h3 className={styles.ledSubtitle}>LEDをオンにする</h3>
-      <pre className={styles.codeBlock}>
-        <code>led.on();</code>
-      </pre>
+        <h3 className={styles.servoSubtitle}>連続回転サーボモーターを特定の距離（メートル）で動かす</h3>
+        <pre className={styles.codeBlock}>
+          <code>
+            await rotateServo.ForwardM(10); // サーボモーターを10メートル前進させます
+          </code>
+        </pre>
 
-      <h3 className={styles.ledSubtitle}>LEDをオフにする</h3>
-      <pre className={styles.codeBlock}>
-        <code>led.off();</code>
-      </pre>
-
-      <h3 className={styles.ledSubtitle}>LEDを点滅させる</h3>
-      <pre className={styles.codeBlock}>
-        <code>
-          led.blink(); // デフォルトでは1秒間隔で点滅します。
-          <br />
-          led.blink(2000); // 2秒間隔で点滅します。
-        </code>
-      </pre>
-
-      <p className={styles.note}>
-        注意: onやblinkメソッドを使用すると、エンターキーを押すまでLEDの制御が継続されます。
-      </p>
-    </div>
+        <p className={styles.note}>
+          注意: `ForwardM`メソッドを使用すると、サーボモーターは指定された距離（メートル）で前進します。非同期操作が行われるため、`await`を使用してください。
+        </p>
+      </div>
     </Layout>
-    
   );
 };
-
 export default SERVOComponent;
