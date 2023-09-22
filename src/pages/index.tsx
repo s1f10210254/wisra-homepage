@@ -7,7 +7,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '../components/HomepageFeatures';
-import IndexComponent from '../components/Index/IndexComponent';
+import IndexComponent from "../components/Index/IndexComponent"
 
 
 const Home = () => {
@@ -84,13 +84,12 @@ const Home = () => {
   return (
     <div>
       <Layout
-        title={`Hello`}
-        description='Description'
+        title='index'
       >
 
         {/* <HomepageHeader /> */}
-        <main>
-          <div style={{ display: 'flex' }}>
+        {/* <main> */}
+          {/* <div style={{ display: 'flex' }}> */}
           {/* <aside className={styles.sidebar}>
             {itemData.map((item) => (
               <div
@@ -102,15 +101,16 @@ const Home = () => {
               </div>
             ))}
           </aside> */}
-          <main className={styles.main}>
+          <div className={styles.main}>
             {/* <div>
               <h1>{selectedItem.description}</h1>
               {renderContentBasedOnItemName(selectedItem.name)}
             </div> */}
             <IndexComponent />
-          </main>
-        </div>
-        </main>
+          </div>
+          {/* </main> */}
+        {/* </div> */}
+        {/* </main> */}
       </Layout>
     </div>
       

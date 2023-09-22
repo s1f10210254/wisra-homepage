@@ -1,40 +1,40 @@
-/* .ledContainer {
+.Container {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-  }
-  
-  .ledTitle {
+}
+
+.servoTitle {
     margin-bottom: 15px;
     font-size: 24px;
     color: #333;
-  }
-  
-  .ledSubtitle {
+}
+
+.servoSubtitle {
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 20px;
     color: #555;
-  }
-  
-  .codeBlock {
+}
+
+.codeBlock {
     display: block;
     padding: 10px;
     font-family: 'Courier New', monospace;
     font-size: 15px;
     background-color: #e6e6e6;
     border-radius: 4px;
-  }
-  
-  .note {
+}
+
+.note {
     margin-top: 20px;
     font-weight: bold;
     color: red;
-  }
-  
-  .gazou {
+}
+
+/* サーボモーターの画像やその他のメディアがある場合、以下のようなスタイルも追加できます */
+/* .servoImage {
     width: 533px;
     height: 483px;
-    background: url('../../assets/images/led-scene-0.gif') no-repeat;
-  }
-   */
+    background: url('../../assets/images/servo-scene-0.gif') no-repeat;
+} */

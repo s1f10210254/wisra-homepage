@@ -9,9 +9,13 @@ const LEDComponent: React.FC = () => {
       <h2 className={styles.ledTitle}>LEDを制御する</h2>
 
       {/* <div className={styles.gazou} /> */}
-      <h3 className={styles.ledSubtitle}>LED を制御するためのインスタンスの作成</h3>
+      <h3 className={styles.ledSubtitle}>LED インスタンスの作成と初期化</h3>
       <pre className={styles.codeBlock}>
-        <code>const led = LED(13); // ピン13を制御するインスタンスの作成</code>
+        <code>
+            const port = await setup(); // 初期設定
+            <br />
+            const led = port.led(13);
+        </code>
       </pre>
 
       <h3 className={styles.ledSubtitle}>LEDをオンにする</h3>
@@ -24,18 +28,18 @@ const LEDComponent: React.FC = () => {
         <code>led.off();</code>
       </pre>
 
-      <h3 className={styles.ledSubtitle}>LEDを点滅させる</h3>
+      {/* <h3 className={styles.ledSubtitle}>LEDを点滅させる</h3>
       <pre className={styles.codeBlock}>
         <code>
           led.blink(); // デフォルトでは1秒間隔で点滅します。
           <br />
           led.blink(2000); // 2秒間隔で点滅します。
         </code>
-      </pre>
+      </pre> */}
 
-      <p className={styles.note}>
+      {/* <p className={styles.note}>
         注意: onやblinkメソッドを使用すると、エンターキーを押すまでLEDの制御が継続されます。
-      </p>
+      </p> */}
     </div>
     </Layout>
     

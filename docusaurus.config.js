@@ -71,9 +71,14 @@ const config = {
         },
 
         items:[
+          // {
+          //   to:"/INDEX",
+          //   label:"INDEX",
+          //   position:"left",
+          // },
           {
-            to:"/INDEX",
-            label:"INDEX",
+            to:"/UseWisra",
+            label:"UseWisra",
             position:"left",
           },
           {
