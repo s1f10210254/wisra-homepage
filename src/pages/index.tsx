@@ -8,6 +8,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '../components/HomepageFeatures';
 import IndexComponent from "../components/Index/IndexComponent"
+import Index from './INDEX';
 
 
 const Home = () => {
@@ -106,7 +107,7 @@ const Home = () => {
               <h1>{selectedItem.description}</h1>
               {renderContentBasedOnItemName(selectedItem.name)}
             </div> */}
-            <IndexComponent />
+            <Index />
           </div>
           {/* </main> */}
         {/* </div> */}

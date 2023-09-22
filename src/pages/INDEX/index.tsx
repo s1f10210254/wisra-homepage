@@ -4,8 +4,8 @@ import Layout from '@theme/Layout';
 
 const Index = () => {
   return (
-    <Layout title='INDEX'>
-        <div className={styles.container}>
+    // <Layout title='INDEX'>
+    <div className={styles.container}>
       <h1 className={styles.title}>Wisra モジュールの紹介</h1>
       <p className={styles.description}>
         Wisraは、Arduinoでの開発を容易にするnpmモジュールです。このページでは、Wisraの基本的な紹介とその使用方法について説明します。
@@ -35,15 +35,23 @@ const Index = () => {
         <h2 className={styles.subtitle}>サンプル: LEDの制御</h2>
         <p>以下は、Wisraを使用してLEDを制御する基本的な例です:</p>
         <code className={styles.code}>
-          import {'{LED}'} from {"'"}wisra{"'"};
+          import setup from {"'"}wisra{"'"}
           <br />
-          const led = LED(13);
+            const main = async ()={">"}{"{"}
           <br />
-          led.on();
+            const port = await setup();
+            <br />
+            const led = port.led(13)
+            <br />
+            led.on();
+            <br />
+          {"}"}
+          <br />
+        
         </code>
       </section>
     </div>
-    </Layout>
+    // {/* </Layout> */}
     
   );
 };
